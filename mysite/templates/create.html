@@ -1,0 +1,72 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        .info-section h5 {
+            font-weight: 600;
+            color: #21588f;
+        }
+
+        .info-section label {
+            font-weight: 600;
+        }
+
+        .main-btn {
+            color: white;
+            cursor: pointer;
+            background-color: #326da8;
+            border-color: #326da8;
+            border-radius: 0;
+        }
+
+        .main-btn:hover {
+            color: white;
+            background-color: #21588f;
+            border-color: #21588f;
+        }
+
+        .info-section input,
+        .info-section textarea,
+        .image-section .img-wrapper {
+            border: 1px solid #326da8;
+        }
+
+        .image-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-section img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<div>
+    <div class="container mb-3 mt-3">
+        <div class="row">
+            <div class="col-md-6 info-section">
+                <h5>Đăng tải sản phẩm mới</h5>
+                <div class="form-group">
+                    <label for="title">Tiêu đề sản phẩm</label>
+                    <input id="title" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="price">Giá bán</label>
+                    <input id="price" type="number" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="description">Mô tả</label>
+                    <textarea id="description" type="text" class="form-control" rows="6"></textarea>
+                </div>
+            </div>
+            <div class="col-md-6 image-section">
+                <div class="img-wrapper">
+                    <img src="https://via.placeholder.com/300" alt="">
+                </div>
+                <button class="btn main-btn mt-3 w-50">Đổi ảnh minh họa</button>
+            </div>
+        </div>
+    </div>
+</div>
